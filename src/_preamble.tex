@@ -12,10 +12,21 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
+\usepackage{hyperref}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=purple,
+    pdftitle={Resume},
+    pdfpagemode=FullScreen,
+}
+
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
 \newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
-\name{Put name here} % Your name
-\address{put adress here 12345} % Your address
+\name{Aaron Li} % Your name
+\address{\url{abclop99.github.io}} % Your address
 %\address{123 Pleasant Lane \\ City, State 12345} % Your secondary addess (optional)
-\address{(+country code) phone number\\ emailhere@email.com} % Your phone number and email
+\address{(+1) 858 397 3078 \\ a1li@ucsd.edu} % Your phone number and email
