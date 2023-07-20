@@ -18,7 +18,7 @@
 		%----------------------------------------------------------------------------------------
 	\begin{rSection}{Experience}
 		%--copy and paste this region  if you need more--
-		{\bf Title of the experience}{, institution associated with it} \hfill {\em start date- end date}\\
+		{\bf Title of the experience} \hfill {\em start date- end date}\\
 		description of the experience\\\\
 		%--copy and paste this region  if you need more--
 	\end{rSection}
@@ -28,8 +28,93 @@
 	%-----------------------------------------------------------------------------------------------
 	\begin{rSection}{Projects}
 		%--copy and paste this region  if you need more--
-		{\bf Title of the project}{, institution associated with it} \hfill {\em start date- end date}\\
-		description of the project\\\\
+
+		{\bf Title of the project}{, institution associated with it} \hfill {\em start date- end date}
+		\begin{multicols}{2}
+			\begin{itemize}
+				\item TODO
+			\end{itemize}
+		\end{multicols}
+
+		{\bf Fluid Simulation}{, CSE 169} \hfill {\em 2023} \\
+		An attempt at creating a simple fluid simulation on GPU
+		\begin{multicols}{2}
+			\begin{itemize}
+				\item Rust
+				\item WGPU
+				\item Compute shaders in WGSL
+			\end{itemize}
+		\end{multicols}
+
+		{\bf Cloth Simulation}{, CSE 169} \hfill {\em 2023}
+		\begin{multicols}{2}
+			\begin{itemize}
+				\item Written in Rust
+				\item WGPU and WGSL
+			\end{itemize}
+		\end{multicols}
+
+		{\bf Compiler for a Toy Language}{, CSE 131} \hfill {\em 2023} \\
+		Write compiler for a toy S-expr based ``Snek'' language.
+		\begin{multicols}{2}
+			\begin{itemize}
+				\item Written in Rust in a somewhat functional way
+				\item Implemented garbage collector
+			\end{itemize}
+		\end{multicols}
+
+		{\bf Design ISA and Processor}{, CSE 141L} \hfill {\em 2023} \\
+		Design an ISA and a simulated processor to run a few programs on some data
+		\begin{multicols}{2}
+			\begin{itemize}
+				\item 9 bit instructions; 8 bit data
+				\item Processor written in SystemVerilog
+				\item ``Assembler'' written in Rust
+				\item Register-Accumulator architecture
+			\end{itemize}
+		\end{multicols}
+
+		{\bf Pyramid-based Image Fusion}{} \hfill {\em 2021} \\
+		Generates Laplacian pyramids for two images, merges each layer, then reconstructs merged image
+		\begin{multicols}{2}
+			\begin{itemize}
+				\item UI created using QT
+				\item OpenCV for image input/output (not computation)
+				\item Written in \CC
+				\item[\vspace{\fill}] % Don't split list items
+			\end{itemize}
+		\end{multicols}
+
+		{\bf Fractal Generation}{} \hfill {\em 2020}\\
+		Generates images of the Mandelbrot set and it's associated Julia sets
+		\begin{multicols}{2}
+			\begin{itemize}
+				\item Written in Java
+				\item CPU with no zooming optimizations
+				%\item[\vspace{\fill}] % Don't split list items
+			\end{itemize}
+		\end{multicols}
+
+		{\bf Boid Simulation}{} \hfill {\em 2019}\\
+		A simulation of generic flocking creatures
+		\begin{multicols}{2}
+			\begin{itemize}
+				\item Written in Java
+				\item Quad Tree
+				\item Simple basic rules: Separation, Alignment, Cohesion
+			\end{itemize}
+		\end{multicols}
+
+		{\bf Sorting Algorithms Visualization}{} \hfill {\em 2019}\\
+		Runs multiple sorting algorithms on a randomized color gradient to visualize how each works
+		\begin{multicols}{2}
+			\begin{itemize}
+				\item Inspired by other visualizations found online
+				\item Running each algorithm ``step''wise requires thinking about each differently
+				\item Visualizes many common and uncommon sorting algorithms
+				\item[\vspace{\fill}] % Don't split list items
+			\end{itemize}
+		\end{multicols}
 		%--copy and paste this region  if you need more--
 	\end{rSection}
 	
@@ -49,13 +134,20 @@
 	\begin{rSection}{Skills}
 		{\bf Programming Languages and Frameworks }
 		% \\list whatever programming skills you have\\\\
-		\begin{itemize}
-			\item Rust
-			\item Java
-			\item Kotlin
-			\item C/C++
-			\item Python
-		\end{itemize}
+		\begin{multicols}{3}
+			\begin{itemize}
+				\item Rust
+				\item Java
+				\item Kotlin
+				\item C/\CC
+				\item Python
+				\item SystemVerilog
+				\item \LaTeX
+				\item I use Arch btw
+				%\item[\vspace{\fill}] % Don't split list items
+			\end{itemize}
+		\end{multicols}
+
 		{\bf Languages}
 		%\\languages
 		\begin{itemize}

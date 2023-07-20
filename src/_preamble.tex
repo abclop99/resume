@@ -12,9 +12,27 @@
 
 \documentclass{resume} % Use the custom resume.cls style
 
+% \nth{n}
+\usepackage[super]{nth}
+
+% Symbols
+\usepackage{pifont}
+
+% For customizing enum/item
+\usepackage{enumitem}
+% Remove space between list items
+\setlist[itemize]{noitemsep, topsep=-4pt}
+% Change bullet
+\renewcommand{\labelitemi}{\ding{239}}
+
+% Multicols
+\usepackage{multicol}
+\setlength{\multicolsep}{0.0pt plus 2.0pt minus 1.5pt}% 50% of original values
+
+% Colors for links
+\usepackage{xcolor}
 % Links
 \usepackage{hyperref}
-\usepackage{xcolor}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
@@ -24,8 +42,8 @@
     pdfpagemode=FullScreen,
 }
 
-% \nth{n}
-\usepackage[super]{nth}
+% C++ logo
+\newcommand{\CC}{C\nolinebreak\hspace{-.05em}\raisebox{.4ex}{\tiny\bf +}\nolinebreak\hspace{-.10em}\raisebox{.4ex}{\tiny\bf +}}
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
 \newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
