@@ -6,9 +6,26 @@
 	\begin{rSection}{Education}
 		%--copy and paste this region  if you need more--
 		{\bf UC San Diego} \hfill {\em 2018 -- 2023} 
-		\\ Bachelor's Degree in Computer Science\hfill { GPA: 3.3 }
+		\\ Bachelor's Degree in Computer Science % \hfill { GPA: 3.3 }
 		\\ Course work includes whatever notable course you've taken
-		\\
+		\begin{multicols}{2}
+			\begin{itemize}
+				\item CSE 131: Compiler Construction (in Rust)
+				\item CSE 141/141L: Introduction to Computer Architecture (and Lab)
+				\item CSE 151B: Deep Learning
+				\item CSE 152A/B: Intro to Computer Vision I/II
+				\item CSE 166: Image Processing
+				\item CSE 169: Computer Animation
+				\item CSE 130: Programming Languages: Principles and Paradigms (in Haskell)
+				\item CSE 120: Principles of Operating Systems
+				\item CSE 107: Intro to Modern Cryptography
+				\item CSE 127: Intro to Computer Security
+				\item CSE 123: Computer Networks
+				\item CSE 166: Computer Graphics
+				\item \ldots
+				\item[\vspace{\fill}] % Don't split list items
+			\end{itemize}
+		\end{multicols}
 		%--copy and paste this region  if you need more--
 
 	\end{rSection}
@@ -22,20 +39,21 @@
 		%description of the experience\\\\
 		%--copy and paste this region  if you need more--
 
-		{\bf UC San Diego}{, Paid Internship} \hfill {\em June 2022 -- end date}
+		{\bf UC San Diego}{, Internship} \hfill {\em June 2022 -- December 2022}
 		\begin{itemize}
 			\item Created animated human head models for a virtual interview project
 		\end{itemize}
 
-		{\bf Genvira Biosciences}{, Paid Internship} \hfill {\em June 2020 -- September 2020}
+		{\bf Genvira Biosciences}{, Internship} \hfill {\em June 2020 -- September 2020}
 		\begin{itemize}
 			\item Built the company's website using \href{https://gohugo.io/}{Hugo}, a static site generator
+			\item Set up web server and configured to protect against random probes
 		\end{itemize}
 
 		{\bf Futurewei Technologies}{, Volunteer Internship} \hfill {\em June 2018 -- August 2018}
 		\begin{itemize}
 			\item Evaluated See-In-Dark DL network for dark scene image processing
-			\item Generated new dataset with a smartphone camera; retrained neural network
+			\item Created new dataset with a smartphone camera; retrained neural network
 			\item Assembled DL workstation from parts; set up Linux DL environment
 		\end{itemize}
 	\end{rSection}
@@ -53,41 +71,46 @@
 			\end{itemize}
 		\end{multicols}
 
-		{\bf Fluid Simulation}{, CSE 169} \hfill {\em 2023} \\
+		{\bf Fluid Simulation}{, CSE 169: Computer Animations} \hfill {\em 2023} \\
 		An attempt at creating a simple fluid simulation on GPU
 		\begin{multicols}{2}
 			\begin{itemize}
-				\item Rust
-				\item WGPU
+				\item Written in Rust
+				\item Uses WGPU
 				\item Compute shaders in WGSL
 			\end{itemize}
 		\end{multicols}
 
-		{\bf Cloth Simulation}{, CSE 169} \hfill {\em 2023}
+		{\bf Cloth Simulation}{, CSE 169: Computer Animations} \hfill {\em 2023}
 		\begin{multicols}{2}
 			\begin{itemize}
 				\item Written in Rust
-				\item WGPU and WGSL
+				\item Uses WGPU and WGSL
 			\end{itemize}
 		\end{multicols}
 
-		{\bf Compiler for a Toy Language}{, CSE 131} \hfill {\em 2023} \\
+		{\bf Compiler for ``Snek''}{, CSE 131: Compiler Construction} \hfill {\em 2023} \\
 		Write compiler for a toy S-expr based ``Snek'' language.
 		\begin{multicols}{2}
 			\begin{itemize}
-				\item Written in Rust in a somewhat functional way
+				\item Written in Rust using functional paradigms
 				\item Implemented garbage collector
+				\item Compiles to x86 assembly
 			\end{itemize}
 		\end{multicols}
 
-		{\bf Design ISA and Processor}{, CSE 141L} \hfill {\em 2023} \\
-		Design an ISA and a simulated processor to run a few programs on some data
+		{\bf Design ISA and Processor}{, CSE 141L: Introduction to Computer Architecture Lab} \hfill {\em 2023} \\
+		Design an ISA and a simulated processor to run 3 programs on generated data
 		\begin{multicols}{2}
 			\begin{itemize}
 				\item 9 bit instructions; 8 bit data
+				\item Programs 1/2: encode/decode ECC
+				\item Program 3: pattern search
+				\item Register-Accumulator architecture
 				\item Processor written in SystemVerilog
 				\item ``Assembler'' written in Rust
-				\item Register-Accumulator architecture
+				\item Simulated/validated in QuestaSim/Quartus
+				%\item[\vspace{\fill}] % Don't split list items
 			\end{itemize}
 		\end{multicols}
 
@@ -140,8 +163,8 @@
 	%-----------------------------------------------------------------------------------------------
 	\begin{rSection}{Activities}
 		%--copy and paste this region  if you need more--
-		{\bf Title of the activities}{, institution associated with it} \hfill {\em start date- end date}\\
-		description of the activities\\\\
+		{\bf Attended CVPR} \hfill {\em 2022, 2023}
+		%description of the activities\\\\
 		%--copy and paste this region  if you need more--
 	\end{rSection}
 	
@@ -154,22 +177,32 @@
 		\begin{multicols}{3}
 			\begin{itemize}
 				\item Rust
+					\begin{itemize}
+						\item WGPU
+					\end{itemize}
+				\item WGSL
 				\item Java
 				\item Kotlin
 				\item C/\CC
 				\item Python
 				\item SystemVerilog
 				\item \LaTeX
-				\item I use Arch btw
 				%\item[\vspace{\fill}] % Don't split list items
 			\end{itemize}
 		\end{multicols}
 
-		{\bf Languages}
+		{\bf Other }
+		\begin{multicols}{2}
+			\begin{itemize}
+				\item Arch Linux
+			\end{itemize}
+		\end{multicols}
+
+		%{\bf Languages}
 		%\\languages
-		\begin{itemize}
-			\item ?
-		\end{itemize}
+		%\begin{itemize}
+		%	\item ?
+		%\end{itemize}
 	\end{rSection}
 
 	\begin{rSection}{Awards and Scholarships} 
