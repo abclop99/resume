@@ -1,5 +1,12 @@
 \begin{document}
 
+	%\begin{rSection}{Objectives}
+	%\end{rSection}
+
+	\begin{center}
+	Motivated new CS graduate looking for a job in {software development}
+	\end{center}
+
 	%----------------------------------------------------------------------------------------
 	%	EDUCATION SECTION
 	%----------------------------------------------------------------------------------------
@@ -50,7 +57,7 @@
 			\item Set up web server and configured to protect against random probes
 		\end{itemize}
 
-		{\bf Futurewei Technologies}{, Volunteer Internship} \hfill {\em June 2018 -- August 2018}
+		{\bf Futurewei Technologies}{, Internship} \hfill {\em June 2018 -- August 2018}
 		\begin{itemize}
 			\item Evaluated See-In-Dark DL network for dark scene image processing
 			\item Created new dataset with a smartphone camera; retrained neural network weights
@@ -71,31 +78,13 @@
 		%	\end{itemize}
 		%\end{multicols}
 
-		{\bf Nvidia Jetson}{} \hfill {\em start date -- end date}
+		{\bf Nvidia Jetson}{} \hfill {\em June 2023 -- }
 		\begin{multicols}{2}
 			\begin{itemize}
 				\item Orin NX 16GB
 				\item Flash memory from backup; expand partition and filesystem
 				\item Use gstreamer to open CSI camera
 				\item Set up Yolo5 and accelerate with TensorRT
-			\end{itemize}
-		\end{multicols}
-
-		{\bf Fluid Simulation}{, CSE 169: Computer Animations} \hfill {\em 2023} \\
-		An attempt at creating a simple fluid simulation on GPU
-		\begin{multicols}{2}
-			\begin{itemize}
-				\item Written in Rust
-				\item Uses WGPU
-				\item Compute shaders in WGSL
-			\end{itemize}
-		\end{multicols}
-
-		{\bf Cloth Simulation}{, CSE 169: Computer Animations} \hfill {\em 2023}
-		\begin{multicols}{2}
-			\begin{itemize}
-				\item Written in Rust
-				\item Uses WGPU and WGSL
 			\end{itemize}
 		\end{multicols}
 
@@ -114,7 +103,7 @@
 		\begin{multicols}{2}
 			\begin{itemize}
 				\item 9 bit instructions; 8 bit data
-				\item Programs 1/2: encode/decode ECC
+				\item Programs 1/2: encode/decode Hamming Code ECC
 				\item Program 3: pattern search
 				\item Register-Accumulator architecture
 				\item Processor written in SystemVerilog
@@ -124,12 +113,31 @@
 			\end{itemize}
 		\end{multicols}
 
+		{\bf Fluid Simulation}{, CSE 169: Computer Animations} \hfill {\em 2023} \\
+		An attempt at creating a simple fluid simulation on GPU
+		\begin{multicols}{2}
+			\begin{itemize}
+				\item Written in Rust
+				\item Uses WGPU
+				\item Compute shaders in WGSL for running on the GPU
+			\end{itemize}
+		\end{multicols}
+
+		{\bf Cloth Simulation}{, CSE 169: Computer Animations} \hfill {\em 2023}
+		\begin{multicols}{2}
+			\begin{itemize}
+				\item Written in Rust
+				\item Uses WGPU and WGSL
+				\item Optionally loads starting configuration from a JSON file
+			\end{itemize}
+		\end{multicols}
+
 		{\bf Pyramid-based Image Fusion}{} \hfill {\em 2021} \\
 		Generates Laplacian pyramids for two images, merges each layer, then reconstructs merged image
 		\begin{multicols}{2}
 			\begin{itemize}
 				\item UI created using QT
-				\item OpenCV for image input/output (not computation)
+				\item OpenCV for image input/output only
 				\item Written in \CC
 				\item[\vspace{\fill}] % Don't split list items
 			\end{itemize}
@@ -166,21 +174,19 @@
 			\end{itemize}
 		\end{multicols}
 		
-		{\bf Arch Linux installation}{} \hfill {\em ??? -- Present}
-		%\begin{multicols}{2}
+		{\bf Arch Linux installation}{} \hfill {\em 2022 -- Present}
+		\begin{multicols}{2}
 			\begin{itemize}
 				\item Installed Arch linux manually (without \verb|archinstall|)
-				\item Expanded boot partition to fit multiple kernels
+				%\item Expanded boot partition at beginning of disk to fit multiple kernels
 				\item Set up zram and zswap
-				\item Swap from from KDE to \verb`swaywm`
-				\item Set up a simple web server with dynamic DNS and \verb`certbot` for https.
-				\begin{itemize}
-					\item Dynamic DNS also useful for \verb|ssh|
-				\end{itemize}
+				%\item Swap from from KDE to \verb`swaywm`
+				\item Set up a simple web server with dynamic DNS and \verb`certbot` for https
+				\item Dynamic DNS also used for ssh access
 				\item Installing and modifying AUR packages, including from source and a local git repository
 				\item Fixed issue with GPG2 failing to contact keyservers
 			\end{itemize}
-		%\end{multicols}
+		\end{multicols}
 		
 		%--copy and paste this region  if you need more--
 	\end{rSection}
