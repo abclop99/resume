@@ -20,7 +20,7 @@
 
 \ProvidesClass{resume}[2010/07/10 v0.9 Resume class]
 
-\LoadClass[11pt,letterpaper]{article} % Font size and paper type
+\LoadClass[a4paper]{article} % Font size and paper type
 
 \usepackage[parfill]{parskip} % Remove paragraph indentation
 \usepackage{array} % Required for boldface (\bf and \bfseries) tabular columns
@@ -110,17 +110,13 @@
 %	WORK EXPERIENCE FORMATTING
 %----------------------------------------------------------------------------------------
 
-\newenvironment{rSubsection}[4]{ % 4 input arguments - company name, year(s) employed, job title and location
- {\bf #1} \hfill {#2} % Bold company name and date on the right
- \ifthenelse{\equal{#3}{}}{}{ % If the third argument is not specified, don't print the job title and location line
-  \\
-  {\em #3} \hfill {\em #4} % Italic job title and location
-  }\smallskip
-  \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
-   \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+\newenvironment{rSubsection}[3]{ % 4 input arguments - company name, category, year(s) employed
+  \begin{minipage}{0.96\columnwidth} % Minipage to keep section together
+  {\bf #1} \hfill {\em #2} \hfill {#3} % Bold company name, category, date
+    \begin{itemize}
   }{
-  \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
+    \end{itemize}
+  \end{minipage}
 }
 
 % The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
